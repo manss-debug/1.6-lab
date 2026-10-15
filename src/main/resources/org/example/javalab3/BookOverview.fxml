@@ -9,7 +9,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/21"
+<AnchorPane stylesheets="@DarkTheme.css"
+            styleClass="background"
+            xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="org.example.javalab3.controller.BookOverviewController"
             prefWidth="1100.0"
@@ -62,7 +64,7 @@
             <AnchorPane>
 
                 <Label text="Информация о книге"
-                       style="-fx-font-size: 20px; -fx-font-weight: bold;"
+                       styleClass="label-header"
                        layoutX="20.0"
                        layoutY="20.0"/>
 
@@ -76,6 +78,7 @@
                            GridPane.rowIndex="0"/>
 
                     <Label fx:id="titleLabel"
+                           styleClass="label-bright"
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="0"/>
 
@@ -84,6 +87,7 @@
                            GridPane.rowIndex="1"/>
 
                     <Label fx:id="bindingLabel"
+                           styleClass="label-bright"
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="1"/>
 
@@ -92,6 +96,7 @@
                            GridPane.rowIndex="2"/>
 
                     <Label fx:id="publisherLabel"
+                           styleClass="label-bright"
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="2"/>
 
@@ -100,6 +105,7 @@
                            GridPane.rowIndex="3"/>
 
                     <Label fx:id="yearLabel"
+                           styleClass="label-bright"
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="3"/>
 
@@ -108,13 +114,14 @@
                            GridPane.rowIndex="4"/>
 
                     <Label fx:id="genreLabel"
+                           styleClass="label-bright"
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="4"/>
 
                 </GridPane>
 
                 <Label text="Информация об авторе"
-                       style="-fx-font-size: 18px; -fx-font-weight: bold;"
+                       styleClass="label-header"
                        layoutX="20.0"
                        layoutY="250.0"/>
 
@@ -128,6 +135,7 @@
                            GridPane.rowIndex="0"/>
 
                     <Label fx:id="authorNameLabel"
+                           styleClass="label-bright"
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="0"/>
 
@@ -136,6 +144,7 @@
                            GridPane.rowIndex="1"/>
 
                     <Label fx:id="authorPhoneLabel"
+                           styleClass="label-bright"
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="1"/>
 
@@ -144,6 +153,7 @@
                            GridPane.rowIndex="2"/>
 
                     <Label fx:id="authorEmailLabel"
+                           styleClass="label-bright"
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="2"/>
 
@@ -152,6 +162,7 @@
                            GridPane.rowIndex="3"/>
 
                     <Label fx:id="authorRatingLabel"
+                           styleClass="label-bright"
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="3"/>
 

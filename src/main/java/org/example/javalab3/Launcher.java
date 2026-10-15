@@ -14,6 +14,7 @@ import org.example.javalab3.model.Author;
 import org.example.javalab3.model.Book;
 
 import java.io.IOException;
+import javafx.scene.image.Image;
 
 public class Launcher extends Application {
 
@@ -44,8 +45,18 @@ public class Launcher extends Application {
         Scene scene = new Scene(root);
 
         primaryStage.setTitle("Электронный каталог книг");
+
+        primaryStage.getIcons().add(
+                new Image(
+                        Launcher.class.getResourceAsStream(
+                                "/org/example/javalab3/images/book-icon.png"
+                        )
+                )
+        );
+
         primaryStage.setScene(scene);
         primaryStage.show();
+
     }
 
     private void createBooks() {
